@@ -20,7 +20,7 @@ SUFFIXES:
 go: go/metrics.pb.go
 
 go/metrics.pb.go: metrics.proto
-	protoc $< --go_out=import_path=github.com/prometheus/client_model/,paths=source_relative:go/
+	protoc $< --go_out=import_path=github.com/lovecandy126/prometheus-client_model/,paths=source_relative:go/
 
 clean:
 	-rm -rf go/*
